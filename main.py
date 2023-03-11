@@ -103,7 +103,10 @@ while dead is False:
                     print("That's the end of the game")
                     dead = True
             else:
-                print("You don't have a " + fight_with)
+                if fight_with[0] in 'aeiou':
+                    print("You don't have an " + fight_with)
+                else:
+                    print("You don't have a " + fight_with)
         else:
             print("There is no one here to fight with")
     elif command == "take":
